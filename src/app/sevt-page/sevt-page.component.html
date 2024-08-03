@@ -1,0 +1,120 @@
+<mat-toolbar>
+    <h1 class = "w-full text-center">Solar Electric Vehicle Team (SEVT)</h1>
+  </mat-toolbar>
+  My contributions...
+  <div class = "flex mx-20 mt-10 bg-red-200">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" bg-red-500 h-full">
+        <h1>Battery Management System (BMS)</h1>
+      <img src="../assets/Headboard.jpg" class = "w-11/12 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <p class="pl-5 text-sm w-1/2 h-full pt-32">
+
+        Our headboard, the green PCB, serves as our BMS, and has two main roles:
+        Monitoring the state of the car's electronics and controlling relays to supply power.
+        It tracks the current being drawn by and supplied to the motors, solar panels, and charger.
+        I helped test this functionality by using our I2C library and a DC load to draw/deliver current
+        and [make sure the values the headboard was reading were correct]. [These values are important]
+        because they allow us to emergency shut off the car in case currents get dangerously high.<br>
+        The headboard is also responsible for controlling the precharge and high power relays that connect to
+        the motors, solar panels, and charger, which I also [helped] test using the I/O pins and contactors
+        on the circuit board.
+    </p>
+  </div>
+
+
+
+
+  <div class = "flex mx-20 mt-10 bg-red-200">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" bg-red-500 h-full">
+        <h1>Cellboards</h1>
+      <img src="../assets/SingleCellboardOnBattery.jpg" class = "w-11/12 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <p class="pl-5 text-sm w-1/2 h-full pt-32">
+
+        We have 8 cellboards on our battery, each of which is responsible for 
+        measuring the voltage and temperature of one of the battery's zones. They also
+        balance our battery so all the cells are at roughly equal voltages.
+        I [helped] set up and debug the IsoSpi connection between the headboard and 
+        the cellboards, allowing them to communicate while the car was operational.
+        We use the values from the cellboards in the headboard to emergency shut off the 
+        car if our battery becomes dangerously hot or has too much/too little voltage. 
+    </p>
+  </div>
+
+  <div class = "flex mx-20 mt-10 bg-red-200">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" bg-red-500 h-full">
+        <h1>Motors</h1>
+      <img src="../assets/DualMotorSetup.jpg" class = "w-11/12 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <p class="pl-5 text-sm w-1/2 h-full pt-32">
+
+        [For the motors], my role included configuring a wavesculptor motor controller
+        to operate with a Mitsuba D3 motor, writing new code to control the motors using
+        CAN messages from one of our PCBs, and installing the motors on the car.
+        <iframe height = "300" class = "w-11/12 mx-auto mt-10" src = "../../assets/ShortMotorVideo.mp4">
+
+        </iframe>
+    </p>
+  </div>
+
+  <div class = "flex mx-20 mt-10 bg-red-200">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" bg-red-500 h-full">
+        <h1>Dashboard and Telemetry</h1>
+        <div>
+            <img src="../assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto" >
+            <img src="../assets/Speedometer.jpg" class = "w-11/12 mx-auto" >
+            
+    </div>
+
+
+      </mat-card-content>
+    </mat-card>
+    <p class="pl-5 text-sm w-1/2 h-full pt-32">
+        One of the most significant changes to our codebase was our reworking of our CAN 
+        library. Our current car (Gemini) has several pieces of hardware that were not included
+        on Nimbus, including an extra motor, a charger, and new MPPTs, all of which worked using CAN
+        messages, which meant we had to rewrite our CAN library to include these new messages. 
+        However, the AT90CAN, the microcontroller we were using, has physical limitations that
+        allowed each board to only be able to send and receive 15 different types of CAN messages [maybe 14?].
+        The dashboard, being our main source of telemetry, needed to read all 20 types of messages we were handling, 
+        but it was limited to 15. To get around this, we rerouted the CAN, sending messages to other boards, and merging
+        them before sending them to the dashboard, which allowed us to have complete telemetry regarding
+        every system on the car.<br>
+        On the right side of the dashboard, there is a blue module labeled Xbee. This is the device we use to
+        wirelessly transmit our telemtry from Gemini to our strategy team, which uses this information to
+        make decisions about target speeds and charging times. I [helped] set up and test the Xbees when the dashboard
+        was originally being soldered.<br>
+        On the left, there is another blue device, our GPS module, which I wrote and tested code for to
+        allow the strategy team to track our location during the race.<br>
+        Below the dashboard is our display, with the motor speed being the most prominent value. This and other values
+        on the display (such as the battery voltage and temperature) are populated using the telemetry that the dashboard
+        gets from our CAN messages.
+        
+
+    </p>
+  </div>
+
