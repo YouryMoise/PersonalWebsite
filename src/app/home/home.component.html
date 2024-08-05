@@ -1,18 +1,18 @@
-
-<mat-toolbar>
+<div style="background:#ede8f5">
+<mat-toolbar style="background:#adbbda">
     <h1 class = "w-full text-center">Hi! I'm Youry Moise</h1>
   </mat-toolbar>
-  <mat-tab-group>
-    <mat-tab label="School Projects"> 
+  <mat-tab-group >
+    <mat-tab label="Extracurricular Projects"> 
       
         <!-- should figure out the whole routerLink thing eventually -->
         <!-- This solution works for now but reloads the page every time -->
       <a href = "/sevt">
-      <div class = "flex mx-20 mt-10 bg-red-400">
+      <div class = "flex mx-20 mt-10" style = "background:#7091e6b3">
   
         <mat-card class = "w-1/2 bg-blue-300 ">
-          <mat-card-content style = "text-align:center;" 
-          class=" bg-red-500 h-full">
+          <mat-card-content style = "text-align:center;background:#3d52a0c8" 
+          class= "h-full">
             <h1 class = "text-white">Solar Electric Vehicle Team (SEVT)</h1>
           <img src="../assets/Gemini.JPG" class = "w-11/12 mx-auto" >
     
@@ -34,6 +34,156 @@
    
         
     </mat-tab>
-    <mat-tab label="Internships"> Content 2 </mat-tab>
-    <mat-tab label="Personal Projects"> Content 3 </mat-tab>
+
+
+    <mat-tab label="Class Projects"> 
+      
+        <!-- should figure out the whole routerLink thing eventually -->
+        <!-- This solution works for now but reloads the page every time -->
+      <a href = "/sevt">
+      <div class = "flex mx-20 mt-10 bg-red-400">
+  
+        <mat-card class = "w-1/2 bg-blue-300 ">
+          <mat-card-content style = "text-align:center;" 
+          class=" bg-red-500 h-full">
+            <h1 class = "text-white">Computation Structures - Operating System Design</h1>
+          <img src="../../assets/OS.jpg" class = "w-11/12 mx-auto" >
+            
+    
+    
+          </mat-card-content>
+        </mat-card>
+        <p class="pl-5 text-2xl w-1/2 h-full pt-32">
+            Coded in C and Assembly to implement the following features of
+            a [limited] operating system:<br>
+            Context switching between processes by accessing registers<br>
+            Switching between user and kernel mode<br>
+            Addressing exceptions using a trap handler<br>
+            Conversions between virtual and physical memory<br>
+            Syscalls 
+        
+          
+  
+        </p>
+      </div>
+
+      <div class = "flex mx-20 mt-10 bg-red-400">
+  
+        <mat-card class = "w-1/2 bg-blue-300 ">
+          <mat-card-content style = "text-align:center;" 
+          class=" bg-red-500 h-full">
+            <h1 class = "text-white">Computation Structures - Processor Design</h1>
+          <img src="../../assets/Processor.jpg" class = "w-11/12 mx-auto" >
+
+    
+    
+          </mat-card-content>
+        </mat-card>
+        <p class="pl-5 text-2xl w-1/2 h-full pt-32">
+            Coded in Hardware Description Language (HDL) to design a RISC-V Central Processing Unit (CPU) with: <br>
+            Arithmetic Logic Unit (ALU) for executing mathematical operations on numbers using boolean logic gates (AND, OR, NOT, XOR)<br>
+            A four stage pipeline to optimize throughput<br>
+            Data and instruction caches with stall behavior while accessing memory<br>
+            Bypassing across pipeline stages to prevent unnecessary stalling
+
+        
+          
+  
+        </p>
+      </div>
+
+      <div class = "flex mx-20 mt-10 bg-red-400">
+  
+        <mat-card class = "w-1/2 bg-blue-300 ">
+          <mat-card-content style = "text-align:center;" 
+          class=" bg-red-500 h-full">
+            <h1 class = "text-white">Fundamentals of Programming - LISP Intepreter</h1>
+          <img src="../assets/Gemini.JPG" class = "w-11/12 mx-auto" >
+    
+    
+    
+          </mat-card-content>
+        </mat-card>
+        <p class="pl-5 text-2xl w-1/2 h-full pt-32">
+  
+        
+          
+  
+        </p>
+      </div>
+
+
+    </a>
+
+   
+        
+    </mat-tab>
+
+
+    <mat-tab label="Internships"> 
+
+        <a href = "/sevt">
+            <div class = "flex mx-20 mt-10 bg-yellow-200">
+        
+              <mat-card class = "w-1/2 bg-blue-300 ">
+                <mat-card-content style = "text-align:center;" 
+                class=" bg-green-500 h-full">
+                  <h1 class = "text-blue-800 font-semibold">eBay Software Engineering Intern</h1>
+                <img src="../../assets/ebaySign.jpg" class = "w-11/12 mx-auto" >
+          
+          
+          
+                </mat-card-content>
+              </mat-card>
+              <p class="pl-5 text-2xl w-1/2 h-full pt-32 text-black opacity-80">
+        
+                Co-leading the Electrical Engineering subteam of SEVT, a student-run group
+                that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge
+                
+                <!-- group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge. -->
+        
+              </p>
+            </div>
+          </a>
+
+
+
+
+    </mat-tab>
+
+
+
+
+    <mat-tab label="Personal Projects"> 
+
+        <a href = "/wordSearch">
+            <div class = "flex mx-20 mt-10 bg-yellow-200">
+        
+              <mat-card class = "w-1/2 bg-blue-300 ">
+                <mat-card-content style = "text-align:center;" 
+                class=" bg-green-500 h-full">
+                  <h1 class = "text-blue-800 font-semibold">Word Search Solver</h1>
+                <img src="../../assets/SolvedWordSearch.png" class = "w-11/12 mx-auto" >
+          
+          
+          
+                </mat-card-content>
+              </mat-card>
+              <p class="pl-5 text-2xl w-1/2 h-full pt-32 text-black opacity-80">
+        
+                Designed a web app, including an automated test suite, grammar, parser,
+                and abstract data types to take word search puzzles from the user and solve 
+                them graphically
+
+            
+                <!-- group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge. -->
+        
+              </p>
+            </div>
+          </a>
+
+
+    </mat-tab>
   </mat-tab-group>
+
+</div>
