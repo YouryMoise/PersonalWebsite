@@ -1,15 +1,15 @@
-<div class = "bg-gray-100 pb-5">
-<mat-toolbar style = "background:red;">
+<div class ="light">
+<mat-toolbar id = "toolbar">
     <h1 class = "w-full text-center text-white">Solar Electric Vehicle Team (SEVT) - My Contributions</h1>
   </mat-toolbar>
   
 
 
-  <div class = "flex mx-20 mt-10 bg-green-300 rounded-lg">
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
     <mat-card class = "w-1/2 bg-blue-300">
       <mat-card-content style = "text-align:center;" 
-      class=" bg-green-600 h-full rounded-l-lg">
+      class=" dark h-full rounded-l-lg">
         <p class = "font-medium text-xl mb-2">Battery Management System (BMS)</p>
       <img src="../assets/Headboard.jpg" class = "w-11/12 mx-auto" >
 
@@ -17,7 +17,8 @@
 
       </mat-card-content>
     </mat-card>
-    <p class=" text-lg w-1/2 h-full pt-5 px-10 text-black text-opacity-80">
+    <div class = "w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
 
         Our headboard, the green PCB, serves as our BMS, and has two main roles:
         Monitoring the state of the car's electronics and controlling relays to supply power.
@@ -29,16 +30,17 @@
         the motors, solar panels, and charger, which I also [helped] test using the I/O pins and contactors
         on the circuit board.
     </p>
+    </div>
   </div>
 
 
 
 
-  <div class = "flex mx-20 mt-10 bg-orange-300 rounded-lg">
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
     <mat-card class = "w-1/2 bg-blue-300 ">
       <mat-card-content style = "text-align:center;" 
-      class=" bg-orange-400 h-full rounded-l-lg">
+      class=" dark h-full rounded-l-lg">
       <p class = "font-medium text-xl mb-2">Cellboards</p>
       <img src="../assets/SingleCellboardOnBattery.jpg" class = "w-11/12 mx-auto" >
 
@@ -46,7 +48,8 @@
 
       </mat-card-content>
     </mat-card>
-    <p class="text-xl w-1/2 h-full pt-16 px-10 text-black text-opacity-80">
+    <div class = "w-1/2 m-auto">
+    <p class="text-xl h-full px-10 text-black text-opacity-80">
 
         We have 8 cellboards on our battery, each of which is responsible for 
         measuring the voltage and temperature of one of the battery's zones. They also
@@ -56,10 +59,11 @@
         We use the values from the cellboards in the headboard to emergency shut off the 
         car if our battery becomes dangerously hot or has too much/too little voltage. 
     </p>
+    </div>
   </div>
-  <div class = "text-center mt-1 bg-orange-300  mx-20 pt-2 pb-5 px-5 rounded-lg">
+  <div class = "text-center mt-1 semidark  mx-20 pt-2 pb-5 px-5 rounded-lg">
     <p class = "font-medium text-xl mb-2">Cellboards on Battery</p>
-  <div class = "flex ">
+    <div class = "w-1/2 m-auto">
     <!-- <h1 class = "w-full">Hello</h1> -->
   
     <img src="../../assets/FourCellboardsOnBattery.jpg" class = "w-1/2 mx-auto h-80" >
@@ -67,11 +71,11 @@
   </div>
 </div>  
 
-  <div class = "flex mx-20 mt-10 bg-gray-200 rounded-lg">
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
     <mat-card class = "w-1/2 bg-blue-300 ">
       <mat-card-content style = "text-align:center;" 
-      class=" bg-gray-400 h-full rounded-l-lg">
+      class=" dark h-full rounded-l-lg">
       <p class = "font-medium text-xl mb-2">Motors</p>
       <img src="../assets/DualMotorSetup.jpg" class = "w-4/5 mx-auto" >
 
@@ -79,7 +83,8 @@
 
       </mat-card-content>
     </mat-card>
-    <p class="w-1/2 h-full pt-28 px-10 text-xl">
+    <div class = "w-1/2 m-auto">
+    <p class="h-full px-10 text-xl">
 
         [For the motors], my role included configuring a wavesculptor motor controller
         to operate with a Mitsuba D3 motor, writing new code to control the motors using
@@ -88,28 +93,29 @@
         temperatures, and error states. 
         
     </p>
+    </div>
   </div>
 
-<div class = "text-center mt-1 bg-gray-200 mx-20 pt-2 pb-5 px-5 rounded-lg">
+<div class = "text-center mt-1 semidark mx-20 pt-2 pb-5 px-5 rounded-lg">
     <p class = "font-medium text-xl mb-2">More Motor Videos</p>
-  <div class = "flex ">
+  <div class = "flex m-auto">
     <!-- <h1 class = "w-full">Hello</h1> -->
   
-    <iframe height = "300" class = "w-1/2 mx-auto mt-2 px-5" src = "../../assets/ShortMotorVideo.mp4">
+    <iframe height = "300" class = "w-1/2 mx-auto px-5" src = "../../assets/ShortMotorVideo.mp4">
 
     </iframe>
-    <iframe height = "300" class = "w-1/2 mx-auto mt-2 px-5" src = "../../assets/SpinningWheelsSilent.mp4">
+    <iframe height = "300" class = "w-1/2 mx-auto px-5" src = "../../assets/SpinningWheelsSilent.mp4">
 
     </iframe>
     
   </div>
 </div>  
 
-  <div class = "flex mx-20 mt-10 bg-blue-300 rounded-lg">
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
     <mat-card class = "w-1/2 bg-blue-300 ">
       <mat-card-content style = "text-align:center;" 
-      class=" bg-blue-700 h-full rounded-l-lg">
+      class=" dark h-full rounded-l-lg">
       <p class = "font-medium text-xl mb-2">Dashboard and Telemetry</p>
         <div>
             <img src="../assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto" >
@@ -119,7 +125,8 @@
 
       </mat-card-content>
     </mat-card>
-    <p class="px-10 text-lg w-1/2 h-full pt-10">
+    <div class = "w-1/2 m-auto">
+    <p class="px-10 text-lg h-full">
         Our current car has several pieces of hardware that were not included
         on Nimbus, including an extra motor, a charger, and new MPPTs, all of which required adding new 
         messages to our CAN library. 
@@ -138,20 +145,22 @@
         
 
     </p>
+    </div>
   </div>
 
   
-  <div class = "text-center mt-1 bg-blue-300  mx-20 pt-2 pb-5 px-5 rounded-lg">
+  <div class = "text-center mt-1 semidark  mx-20 pt-2 pb-5 px-5 rounded-lg">
     <p class = "font-medium text-xl mb-2">More Telemetry</p>
-  <div class = "flex ">
-    <!-- <h1 class = "w-full">Hello</h1> -->
   
+    <!-- <h1 class = "w-full">Hello</h1> -->
+    <div class = "flex m-auto">
     <img src="../assets/Speedometer.jpg" class = "w-1/2 mx-auto" >
     <iframe height = "300" class = "w-1/2 mx-auto mt-2 px-5" src = "../../assets/MotorAndTelemetryShort.mp4">
 
     </iframe>
+    </div>
     
-  </div>
+  
 </div>  
 
 </div>

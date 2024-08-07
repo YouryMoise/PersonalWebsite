@@ -4,3 +4,7 @@
 @tailwind utilities;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.dark {background:#3d52a0c8}
+.semidark {background:#7091e6b3}
+.light {background:#ede8f5}
+#toolbar {background:#adbbda}
