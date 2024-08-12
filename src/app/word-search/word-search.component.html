@@ -1,0 +1,175 @@
+<div class="light pb-5">
+<mat-toolbar id = "toolbar">
+    <h1 class = "w-full text-center text-white">Word Search Puzzle Web App</h1>
+  </mat-toolbar>
+
+<div class = "text-center mt-5 semidark mx-20 pt-2 pb-5 px-5 rounded-lg">
+    <p class = "font-medium text-xl mb-2">Demo</p>
+  <div class = "flex m-auto">
+    <!-- <h1 class = "w-full">Hello</h1> -->
+  
+    <video height = "300" controls class = "w-1/2 mx-auto mt-2 px-5" src = "../../assets/StarBattleDemo.mp4">
+        
+    </video>
+  
+  </div>
+</div>  
+
+<!-- Each box is a step (more or less)
+    Writing the specs, abstraction function, RI, and SRE
+        Got the spec, there are no AFs or SREs, minimal RI
+    Writing the partitions and automated mocha test suite
+        Got pics
+    Writing grammar and parser
+        Got pic of grammar (don't need parser pic)
+    Implementing the functions
+        Got a pic
+    Making the display and buttons/key events
+        Got pic
+    Future plans
+
+-->
+
+<div class = "flex mx-20 mt-10 semidark rounded-lg">
+  
+    <mat-card class = "w-1/2">
+      <mat-card-content style = "text-align:center;" 
+      class=" dark h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2">Specifications</p>
+      <img src="../../assets/Spec.png" class = "w-11/12 mx-auto" >
+        <!-- YOURY - need more pics for this, one spec isn't enough -->
+
+
+      </mat-card-content>
+    </mat-card>
+    <div class = "flex w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
+        Before implementing anything, I wrote complete, declarative, and 
+        deterministic specifications for every function I was planning to create.
+        These, along with the function signatures, helped me keep track of each module's
+        purpose and made it easy to tell what each part of the code was meant to be doing
+        by just glancing at it.
+
+    </p>
+</div>
+  </div>
+
+
+<div class = "flex mx-20 mt-10 semidark rounded-lg">
+
+<mat-card class = "w-1/2">
+    <mat-card-content style = "text-align:center;" 
+    class=" dark h-full rounded-l-lg">
+    <p class = "font-medium text-xl mb-2">Test Suite</p>
+    <!-- <div class="flex"> -->
+    <img src="../../assets/TestPartition.png" class = "w-2/3 mx-auto" >
+    <!-- <img src="../../assets/TestCases.png" class = "w-1/2 mx-auto" > -->
+    <!-- </div> -->
+
+
+    </mat-card-content>
+</mat-card>
+<div class = "w-1/2 m-auto">
+<p class=" text-lg h-full px-10 text-black text-opacity-80">
+    After writing the specs, I used JavaScript's Mocha framework to create an
+    automated test suite. For each public function in the code, I partitioned
+    cases based on the input and output space, and created suites that would cover
+    these partitions using as few tests as possible. Having these tests made it
+    easy to see if anything broke while implementing new features.
+
+</p>
+</div>
+</div>
+
+<div class = "flex mx-20 mt-10 semidark rounded-lg">
+
+    <mat-card class = "w-1/2">
+        <mat-card-content style = "text-align:center;" 
+        class=" dark h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2">Grammar and Parser</p>
+        <!-- <div class="flex"> -->
+        <img src="../../assets/Grammar.png" class = "w-2/3 mx-auto" >
+        <!-- <img src="../../assets/TestCases.png" class = "w-1/2 mx-auto" > -->
+        <!-- </div> -->
+    
+    
+        </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
+        In order to allow users to define puzzles, I used the parserlib library
+        to define a grammar that describes how to enter line numbers and characters to
+        create a new puzzle. Using parserlib, I also wrote code to parse user input
+        to match this grammar and create an instance of the Grid abstract data type with
+        the result. 
+    
+    </p>
+    </div>
+    </div>
+
+<div class = "flex mx-20 mt-10 semidark rounded-lg">
+
+    <mat-card class = "w-1/2">
+        <mat-card-content style = "text-align:center;" 
+        class=" dark h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2">Implementation</p>
+        <!-- <div class="flex"> -->
+        <img src="../../assets/Implementation.png" class = "w-2/3 mx-auto" >
+        <!-- <img src="../../assets/TestCases.png" class = "w-1/2 mx-auto" > -->
+        <!-- </div> -->
+    
+    
+        </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
+        After writing the specs and test cases, I started working on the implementation of both 
+        helper and public functions. The one pictured is responsible for finding the locations
+        of all the words in the puzzle. 
+    
+    </p>
+    </div>
+    </div>
+
+<div class = "flex mx-20 mt-10 semidark rounded-lg">
+
+    <mat-card class = "w-1/2">
+        <mat-card-content style = "text-align:center;" 
+        class=" dark h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2">Display and User Input</p>
+        <!-- <div class="flex"> -->
+        <img src="../../assets/Display.png" class = "w-2/3 mx-auto" >
+        <!-- <img src="../../assets/TestCases.png" class = "w-1/2 mx-auto" > -->
+        <!-- </div> -->
+    
+    
+        </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
+        I created the UI to display the letters and give the user instructions
+        for how to interact with the page. I also added buttons and keydown event listeners
+        to allow the user to solve the puzzle step by step or all at once, as well as some
+        to undo the most recent step.
+    
+    </p>
+    </div>
+    </div>
+<!-- 
+<div class = "flex mx-20 mt-10 bg-green-300 rounded-lg">
+
+    <mat-card class = "w-1/2 bg-blue-300">
+        <mat-card-content style = "text-align:center;" 
+        class=" bg-green-600 h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2">Future Plans</p>
+        <img src="../../assets/Display.png" class = "w-2/3 mx-auto" >
+    
+    
+        </mat-card-content>
+    </mat-card>
+    <p class=" text-lg w-1/2 h-full pt-5 px-10 text-black text-opacity-80">
+        Small fixes 
+    
+    </p>
+    </div> -->
+</div>

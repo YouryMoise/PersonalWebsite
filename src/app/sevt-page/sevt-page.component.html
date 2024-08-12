@@ -1,0 +1,170 @@
+<div class ="light pb-5">
+<mat-toolbar id = "toolbar">
+    <h1 class = "w-full text-center lighttext">Solar Electric Vehicle Team (SEVT) - My Contributions</h1>
+  </mat-toolbar>
+  
+
+
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
+  
+    <mat-card class = "w-1/2 bg-blue-300">
+      <mat-card-content style = "text-align:center;" 
+      class=" dark h-full rounded-l-lg">
+        <p class = "font-medium text-xl mb-2 lighttext">Battery Management System (BMS)</p>
+      <img src="../assets/Headboard.jpg" class = "w-11/12 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class=" text-lg h-full px-10 text-black text-opacity-80">
+
+        Our headboard, the green PCB, serves as our BMS and has two main roles:
+        Monitoring the state of the car's electronics and controlling relays to supply power.
+        It tracks the current being drawn by and supplied to the motors, solar panels, and charger.
+        I validated its current measurements by comparing the output of our I2C library
+        and the current we were drawing/delivering using a DC load. Having accurate current values
+         allows us to emergency shut off the car in case currents get dangerously high.<br>
+        The headboard is also responsible for controlling the precharge and high power relays that connect to
+        the motors, solar panels, and charger, which I also tested using its I/O pins and contactors.
+    </p>
+    </div>
+  </div>
+
+
+
+
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" dark h-full rounded-l-lg">
+      <p class = "font-medium text-xl mb-2 lighttext">Cellboards</p>
+      <img src="../assets/SingleCellboardOnBattery.jpg" class = "w-11/12 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class="text-xl h-full px-10 text-black text-opacity-80">
+
+        We have 8 cellboards on our battery, each of which is responsible for 
+        measuring the voltage and temperature of a sector of the battery. They also
+        balance our battery so all the cells are at roughly equal voltages.
+        I set up and debugged the IsoSpi connection between the headboard and 
+        the cellboards, allowing them to communicate while the car was operational.
+        The headboard uses the values from the cellboards to emergency shut off the 
+        car if our battery becomes dangerously hot or has too much/too little voltage. 
+    </p>
+    </div>
+  </div>
+  <div class = "text-center mt-1 semidark  mx-20 pt-2 pb-5 px-5 rounded-lg">
+    <p class = "font-medium text-xl mb-2 lighttext">Cellboards on Battery</p>
+    <div class = "w-1/2 m-auto">
+    <!-- <h1 class = "w-full">Hello</h1> -->
+  
+    <img src="../../assets/FourCellboardsOnBattery.jpg" class = "w-1/2 mx-auto h-80" >
+    
+  </div>
+</div>  
+
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" dark h-full rounded-l-lg">
+      <p class = "font-medium text-xl mb-2 lighttext">Motors</p>
+      <img src="../assets/DualMotorSetup.jpg" class = "w-4/5 mx-auto" >
+
+
+
+      </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class="h-full px-10 text-xl">
+
+        For the motors, my role included configuring a wavesculptor motor controller
+        to operate with a Mitsuba D3 motor, writing new code to control the motors using
+        CAN messages from one of our PCBs, and installing the motors on the car. I also wrote
+        code for receiving telemetry from the motors, which includes information about their velocities,
+        temperatures, and error states. 
+        
+    </p>
+    </div>
+  </div>
+
+<div class = "text-center mt-1 semidark mx-20 pt-2 pb-5 px-5 rounded-lg">
+    <p class = "font-medium text-xl mb-2 lighttext">More Motor Videos</p>
+  <div class = "flex m-auto">
+    <!-- <h1 class = "w-full">Hello</h1> -->
+  
+    <video controls height = "300" class = "w-1/2 mx-auto px-5" src = "../../assets/ShortMotorVideo.mp4">
+
+    </video>
+    <video controls height = "300" class = "w-1/2 mx-auto px-5" src = "../../assets/SpinningWheelsSilent.mp4">
+
+    </video>
+    
+  </div>
+</div>  
+
+  <div class = "flex mx-20 mt-10 semidark rounded-lg">
+  
+    <mat-card class = "w-1/2 bg-blue-300 ">
+      <mat-card-content style = "text-align:center;" 
+      class=" dark h-full rounded-l-lg">
+      <p class = "font-medium text-xl mb-2 lighttext">Dashboard and Telemetry</p>
+        <div>
+            <img src="../assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto" >
+            <img src="../../assets/JustXbee.jpg" class="w-11/12 mt-5 mx-auto">
+    </div>
+
+
+      </mat-card-content>
+    </mat-card>
+    <div class = "w-1/2 m-auto">
+    <p class="px-10 text-lg h-full">
+        Our current car has several pieces of hardware that were not included
+        on Nimbus, including an extra motor, a charger, and new MPPTs, all of which required adding new 
+        messages to our CAN library. 
+        This brought the total to 20 messages the dashboard needed to read, but the AT90CAN, our
+         microcontroller, can only tranceive 15.
+        To get around this, we rerouted the CAN, sending messages to other boards and merging
+        them before sending them to the dashboard, which allowed us to have complete telemetry regarding
+        every system on the car.<br>
+        On the right side of the dashboard, there is a blue module labeled "Xbee", which I helped configure and test.
+        This is the device we use to
+        wirelessly transmit our telemetry from Gemini to our strategy team, which uses this information to
+        make decisions about target speeds and charging times.<br>
+        On the left, there is another blue device, our GPS module, which I wrote and tested code for to
+        allow the strategy team to track our location during the race.
+        
+        
+
+    </p>
+    </div>
+  </div>
+
+  
+  <div class = "text-center mt-1 semidark  mx-20 pt-2 pb-5 px-5 rounded-lg">
+    <p class = "font-medium text-xl mb-2 lighttext">More Telemetry</p>
+  
+    <!-- <h1 class = "w-full">Hello</h1> -->
+    <div class = "flex m-auto">
+    <img src="../assets/Speedometer.jpg" class = "w-1/2 mx-auto" >
+    <video controls height = "300" class = "w-1/2 mx-auto mt-2 px-5" src = "../../assets/MotorAndTelemetryShort.mp4">
+
+    </video>
+    </div>
+    
+  
+</div>  
+
+</div>
+
+<!-- Below the dashboard is our display, with the motor speed being the most prominent value. This and other values
+        on the display (such as the battery voltage and temperature) are populated using the telemetry that the dashboard
+        gets from our CAN messages.An example of the velocity telemetry from the motors is shown below: -->
+        
