@@ -1,26 +1,26 @@
-<div class = "light">
+<!-- <div class = "light h-full"> -->
 <mat-toolbar id = "toolbar">
-    <h1 class = "w-full text-center">Hi! I'm Youry Moise</h1>
+    <h1 class = "w-full text-center lighttext">Hi! I'm Youry Moise</h1>
   </mat-toolbar>
   <mat-tab-group >
-    <mat-tab label="Extracurricular Projects"> 
+    <mat-tab label="Extracurricular Projects" > 
       
         <!-- should figure out the whole routerLink thing eventually -->
         <!-- This solution works for now but reloads the page every time -->
-      <!-- <a href = "/sevt"> -->
+      <a href = "/sevt">
       <div class = "flex mx-20 mt-10 semidark" >
   
         <mat-card class = "w-1/2">
           <mat-card-content style = "text-align:center" 
           class= "h-full dark">
-            <h1 class = "text-white">Solar Electric Vehicle Team (SEVT)</h1>
-          <img src="../assets/Gemini.JPG" class = "w-11/12 mx-auto" >
+            <h1 class = "lighttext">Solar Electric Vehicle Team (SEVT)</h1>
+          <img src="../../assets/Gemini.JPG" class = "w-11/12 mx-auto" >
     
     
     
           </mat-card-content>
         </mat-card>
-        <div class = "w-1/2 m-auto">
+        <div class = "w-1/2 m-auto h-full">
         <p class="pl-5 text-2xl h-full">
   
           Co-leading the Electrical Engineering subteam of SEVT, a student-run group
@@ -29,9 +29,11 @@
           <!-- group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge. -->
   
         </p>
+        
     </div>
+    
       </div>
-    <!-- </a> -->
+    </a>
 
    
         
@@ -40,15 +42,13 @@
 
     <mat-tab label="Class Projects"> 
       
-        <!-- should figure out the whole routerLink thing eventually -->
-        <!-- This solution works for now but reloads the page every time -->
-      <!-- <a href = "/sevt"> -->
+    
       <div class = "flex mx-20 mt-10 semidark">
   
-        <mat-card class = "w-1/2 bg-blue-300 ">
+        <mat-card class = "w-1/2 ">
           <mat-card-content style = "text-align:center;" 
           class=" dark h-full">
-            <h1 class = "text-white">Computation Structures - Operating System Design</h1>
+            <h1 class = "lighttext">Computation Structures - Operating System Design</h1>
           <img src="../../assets/OS.jpg" class = "w-11/12 mx-auto" >
             
     
@@ -58,7 +58,7 @@
         <div class = "m-auto w-1/2">
         <p class="pl-5 text-2xl  h-full ">
             Coded in C and Assembly to implement the following features of
-            a [limited] operating system:<br>
+            a small operating system:<br>
             Context switching between processes by accessing registers<br>
             Switching between user and kernel mode<br>
             Addressing exceptions using a trap handler<br>
@@ -76,7 +76,7 @@
         <mat-card class = "w-1/2 bg-blue-300 ">
           <mat-card-content style = "text-align:center;" 
           class=" dark h-full">
-            <h1 class = "text-white">Computation Structures - Processor Design</h1>
+            <h1 class = "lighttext">Computation Structures - Processor Design</h1>
           <img src="../../assets/Processor.jpg" class = "w-11/12 mx-auto" >
 
     
@@ -98,7 +98,7 @@
     </div>
       </div>
 
-      <div class = "flex mx-20 mt-10 semidark">
+      <div class = "flex mx-20 my-10 semidark">
   
         <mat-card class = "w-1/2 bg-blue-300 ">
           <mat-card-content style = "text-align:center;" 
@@ -113,7 +113,7 @@
         <div class = "w-1/2 m-auto">
         <p class="pl-5 text-2xl h-full">
   
-        
+        Use Python coding language to design interpeter for LISP.
           
   
         </p>
@@ -121,7 +121,6 @@
       </div>
 
 
-    <!-- </a> -->
 
    
         
@@ -130,29 +129,26 @@
 
     <mat-tab label="Internships"> 
 
-        <!-- <a href = "/sevt"> -->
             <div class = "flex mx-20 mt-10 semidark">
         
               <mat-card class = "w-1/2">
                 <mat-card-content style = "text-align:center;" 
                 class=" dark h-full">
-                  <h1 class = "text-blue-800 font-semibold">eBay Software Engineering Intern</h1>
+                  <h1 class = "lighttext font-semibold">eBay Software Engineering Intern</h1>
                 <img src="../../assets/ebaySign.jpg" class = "w-11/12 mx-auto" >
-          
           
           
                 </mat-card-content>
               </mat-card>
-              <p class="pl-5 text-2xl w-1/2 h-full pt-32 text-black opacity-80">
+              <div class = "w-1/2 m-auto h-full">
+                <p class="pl-5 text-2xl h-full opacity-80">
         
-                Co-leading the Electrical Engineering subteam of SEVT, a student-run group
-                that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge
-                
-                <!-- group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge. -->
-        
+                Creating AI tool using LLMs to improve the experience of eBay's sellers
+               
               </p>
             </div>
-          <!-- </a> -->
+            </div>
+         
 
 
 
@@ -165,12 +161,12 @@
     <mat-tab label="Personal Projects"> 
 
         <a href = "/wordSearch">
-            <div class = "flex mx-20 mt-10 semidark">
+            <div class = "flex mx-20 mt-10 semidark mb-10">
         
               <mat-card class = "w-1/2 ">
                 <mat-card-content style = "text-align:center;" 
                 class=" dark h-full">
-                  <h1 class = "text-blue-800 font-semibold">Word Search Solver</h1>
+                  <h1 class = "lighttext font-semibold">Word Search Solver</h1>
                 <img src="../../assets/SolvedWordSearch.png" class = "w-11/12 mx-auto" >
           
           
@@ -184,7 +180,6 @@
                 them graphically
 
             
-                <!-- group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge. -->
         
               </p>
             </div>
@@ -194,4 +189,4 @@
     </mat-tab>
   </mat-tab-group>
 
-</div>
+<!-- </div> -->
