@@ -11,13 +11,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SevtPageComponent } from './sevt-page/sevt-page.component';
 import { HomeComponent } from './home/home.component';
 import { WordSearchComponent } from './word-search/word-search.component';
+import { ExtrasComponent } from './extras/extras.component';
+import { ClassProjectsComponent } from './class-projects/class-projects.component';
+import { InternshipsComponent } from './internships/internships.component';
+import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
+import { InfoCardComponent } from './info-card/info-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SevtPageComponent,
     HomeComponent,
-    WordSearchComponent
+    WordSearchComponent,
+    ExtrasComponent,
+    ClassProjectsComponent,
+    InternshipsComponent,
+    PersonalProjectsComponent,
+    InfoCardComponent
   ],
   imports: [
     BrowserModule,
