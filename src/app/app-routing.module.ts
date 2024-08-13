@@ -11,7 +11,7 @@ import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/app', pathMatch: 'full' }, // Default route
+  { path: '', redirectTo: '/extras', pathMatch: 'full' }, // Default route
   { path: 'home', component: HomeComponent},
   { path: 'sevt', component:SevtPageComponent },
   { path: 'wordSearch', component:WordSearchComponent},
