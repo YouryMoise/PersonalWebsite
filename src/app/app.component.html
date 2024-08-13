@@ -10,13 +10,14 @@
   <img src="assets/ProfilePic.jpg" class="h-full">
 </div>
 <!-- </div> -->
-
+<!-- [ngStyle]="{'background': (currentTab == 0) ? '#95a5c9dc' : '#adbbda89'}" -->
+<!-- style ="background:#95a5c9dc" -->
 </div>
 <div class="w-full flex light">
-  <p class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/extras">Extracurricular Projects</p>
-  <p class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/classProjects">Class Projects</p>
-  <p class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/internships">Internships</p>
-  <p class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/personal">Personal Projects</p>
+  <p [ngStyle]="{'background': (currentTab == 0) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(0)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/extras">Extracurricular Projects</p>
+  <p [ngStyle]="{'background': (currentTab == 1) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(1)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/classProjects">Class Projects</p>
+  <p [ngStyle]="{'background': (currentTab == 2) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(2)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/internships">Internships</p>
+  <p [ngStyle]="{'background': (currentTab == 3) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(3)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/personal">Personal Projects</p>
 
 </div>
 

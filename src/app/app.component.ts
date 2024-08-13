@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'personal_website';
+  currentTab:number = 0;
+  changeCurrentTab(x:number){
+    this.currentTab = x;
+    // alert(this.currentTab)
+  }
 }

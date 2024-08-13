@@ -11,4 +11,5 @@ export class InfoCardComponent {
   @Input() title!:string;
   @Input() imgLink!:string;
   @Input() text!:string;
+  @Input() route!:string;
 }

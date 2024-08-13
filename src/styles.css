@@ -9,5 +9,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
 .light {background:#ede8f5}
 .lighttext {color:#ffffff}
 #toolbar {background:#adbbda}
+.learn {background:#7091e6e2;}
 .subtoolbar {background:#adbbda89; color:#00000071;}
 ::ng-deep .mat-tab-label {background:red;color: #3498db;}
