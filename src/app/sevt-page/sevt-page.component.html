@@ -52,6 +52,28 @@
     
   </div>
 </div>
+<app-info-card title = "CAN Library Restructuring" imgLink="assets/DirectCANSetup.jpg" text = "Our current car has several pieces of hardware that were not included
+on the previous car, including an extra motor, a charger, and new MPPTs, all of which required adding new 
+messages to our CAN library. 
+This brought the total to 20 messages the dashboard needed to read, but our
+ microcontroller can only tranceive 15.
+To get around this, we rerouted the CAN, sending messages to other boards and merging
+them before sending them to the dashboard, which allowed us to have complete telemetry regarding
+every system on the car.
+">
+
+</app-info-card>
+
+
+<app-info-card title = "Serial Drivers" imgLink="assets/SerialSetup.jpg" text = "Our serial drivers were originally
+set up to send and receive one character at a time. I rewrote the logic involving the tx and rx buffers, as well
+as the vector interrupts to allows our boards to send and receive several characters at once while staying
+synchronized with each other. Doing so made debugging our code with the serial monitor much easier. We used this extensively
+while manufacturing our boards and during the race to debug unexpected issues.
+">
+
+</app-info-card>
+    
   
 <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
@@ -68,15 +90,8 @@
     </mat-card-content>
   </mat-card>
   <div class = "w-1/2 m-auto">
-  <p class="px-10 text-lg h-full">
-      Our current car has several pieces of hardware that were not included
-      on Nimbus, including an extra motor, a charger, and new MPPTs, all of which required adding new 
-      messages to our CAN library. 
-      This brought the total to 20 messages the dashboard needed to read, but the AT90CAN, our
-       microcontroller, can only tranceive 15.
-      To get around this, we rerouted the CAN, sending messages to other boards and merging
-      them before sending them to the dashboard, which allowed us to have complete telemetry regarding
-      every system on the car.<br>
+  <p class="px-10 text-2xl h-full">
+      
       On the right side of the dashboard, there is a blue module labeled "Xbee", which I helped configure and test.
       This is the device we use to
       wirelessly transmit our telemetry from Gemini to our strategy team, which uses this information to
@@ -104,6 +119,12 @@
   
 
 </div>  
-    
+
+<!-- need serial drivers and infotainment -->
+<app-info-card title="Infotainment" imgLink="assets/Infotainment.jpg" text="I helped implement a few features for the
+frontend of our infotainment system, adding features for user interaction, fixing bugs that would cause the 
+main program to crash, and allowing the system to save its state to allow users to save their preferences for the UI.">
+
+</app-info-card>
 
 </div>

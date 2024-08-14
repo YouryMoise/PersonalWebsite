@@ -4,8 +4,8 @@
       <mat-card-content style = "text-align:center" 
       class= "h-full dark">
         <h1 class = "lighttext">{{title}}</h1>
-      <img [src]="imgLink" class = "w-11/12 mx-auto" >
-
+      <img [src]="imgLink" class = "w-11/12 mx-auto" *ngIf="imgLink.includes('.jpg') || imgLink.includes('.png') || imgLink.includes('.JPG')" >
+      <video controls class = "w-11/12 mx-auto px-5" [src] = "imgLink" *ngIf="imgLink.includes('.mp4')"></video>
 
 
       </mat-card-content>
@@ -15,7 +15,7 @@
 
      {{text}}
     </p>
-    <div *ngIf="route" class = "relative w-full text-right flex">
+    <div *ngIf="route" class = "relative w-full text-right flex transition duration-75 hover:scale-105">
         <p class="w-7/12"></p>
     <p [routerLink] = "route" class="text-2xl h-full right-0  w-1/3 learn  pr-5 rounded-lg cursor-pointer">
 
