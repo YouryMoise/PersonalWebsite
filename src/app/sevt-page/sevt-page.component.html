@@ -1,10 +1,6 @@
 <div class="pb-5">
-  <app-info-card title="Battery Management System (BMS)" imgLink="assets/Headboard.jpg" text="Our headboard, the green PCB, serves as our BMS and has two main roles:
-  Monitoring the state of the car's electronics and controlling relays to supply power.
-  It tracks the current being drawn by and supplied to the motors, solar panels, and charger.
-  I validated its current measurements by comparing the output of our I2C library
-  and the current we were drawing/delivering using a DC load. Having accurate current values
-   allows us to emergency shut off the car in case currents get dangerously high.<br>
+  <app-info-card class="whitespace-pre-line" title="Battery Management System (BMS)" imgLink="assets/Headboard.jpg" text="Our headboard, the green PCB, serves as our BMS and has two main roles:
+  Monitoring the state of the car's electronics and controlling relays to supply power. It tracks the current being drawn by and supplied to the motors, solar panels, and charger. I validated its current measurements by comparing the output of our I2C library and the current we were drawing/delivering using a DC load. Having accurate current values allows us to emergency shut off the car in case currents get dangerously high. 
   The headboard is also responsible for controlling the precharge and high power relays that connect to
   the motors, solar panels, and charger, which I also tested using its I/O pins and contactors.">
 
@@ -31,9 +27,9 @@
 
 
   
-  <app-info-card title="Motors" imgLink="assets/DualMotorSetup.jpg" text="For the motors, my role included configuring a wavesculptor motor controller
-  to operate with a Mitsuba D3 motor, writing new code to control the motors using
-  CAN messages from one of our PCBs, and installing the motors on the car. I also wrote
+  <app-info-card title="Motors" imgLink="assets/DualMotorSetup.jpg" text="I configured a wavesculptor motor controller
+  to operate with a Mitsuba D3 motor, wrote new controller code using
+  CAN messages from one of our PCBs, and installed the motor controllers on the car. I also wrote
   code for receiving telemetry from the motors, which includes information about their velocities,
   temperatures, and error states. ">
 
@@ -67,7 +63,7 @@ every system on the car.
 
 <app-info-card title = "Serial Drivers" imgLink="assets/SerialSetup.jpg" text = "Our serial drivers were originally
 set up to send and receive one character at a time. I rewrote the logic involving the tx and rx buffers, as well
-as the vector interrupts to allows our boards to send and receive several characters at once while staying
+as the vector interrupts, to allows our boards to send and receive several characters at once while staying
 synchronized with each other. Doing so made debugging our code with the serial monitor much easier. We used this extensively
 while manufacturing our boards and during the race to debug unexpected issues.
 ">
