@@ -1,0 +1,33 @@
+
+<div class = "pb-5">
+
+<app-info-card title = "Image Feature Extraction" imgLink="assets/Paris.jpg" text="
+Part of my role involved grouping the images into sensible categories. I did this by using InceptionV3 to extract the image features and group them using the k means algorithm. Once those splits were created, we worked to determine which features the algorithm had focused on when grouping the images together. 
+
+">
+</app-info-card>
+
+<app-info-card title = "Optimal K Value" imgLink="assets/Paris.jpg" text="
+Before running the feature extraction program, we needed to know the optimal number of groups. Using too few would result in overgeneralization, while too many would focus excessively on individual differences between the images. I ran k means using each k value from 3 to 15 and used Python's matplotlib library to graph how the variability within the groups decreased as the number of groups increased. Using the elbow method technique, I found the k value at which the decrease in variability started to taper off (10), and we moved forward with that as our optimal k value. 
+
+"></app-info-card>
+
+<!-- Need to add Encoding Culture project 
+    Using InceptionV3 model to extract image features and group them into different
+      folders using k means clustering algorithm, figuring out why it did those splits
+    Finding every type of object that was found in a group of images
+    Using elbow method to find optimal k
+    Hand labeling every object in our pictures and using that to fine tune model with roboflow
+-->
+
+<app-info-card title = "Object Recognition" imgLink="assets/Paris.jpg" text="
+Another part of our project was finding every type of object that was present in the images with which we were working. I did this by iterating over all our pictures, putting them through the Yolov5 algorithm, and adding them to certain directories ('traffic light', 'stop sign', 'car') based on what they had.
+
+"></app-info-card>
+
+<app-info-card title = "YoloV5 Tuning" imgLink="assets/Paris.jpg" text="
+Finally, we wanted to fine tune the YoloV5 model to fit with the specific images in our project. To do this, I used Roboflow to hand-label pictures, split them into a training, validation, and testing group. With those groups and some fine tuning, I was able to bring the model's accuract to around 75% when run on our Paris directory, which was helpful for queries such as, 'I want to see pictures with cars'
+
+"></app-info-card>
+
+</div>

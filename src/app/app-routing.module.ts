@@ -9,6 +9,7 @@ import { ExtrasComponent } from './extras/extras.component';
 import { ClassProjectsComponent } from './class-projects/class-projects.component';
 import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
+import { EcProjectComponent } from './ec-project/ec-project.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/extras', pathMatch: 'full' }, // Default route
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'extras', component: ExtrasComponent,},
   { path: 'classProjects', component: ClassProjectsComponent},
   { path: 'internships', component: InternshipsComponent},
-  { path: 'personal', component: PersonalProjectsComponent}
+  { path: 'personal', component: PersonalProjectsComponent},
+  { path: 'ec-project', component: EcProjectComponent},
 
 ];
 

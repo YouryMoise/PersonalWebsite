@@ -16,6 +16,7 @@ import { ClassProjectsComponent } from './class-projects/class-projects.componen
 import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 import { InfoCardComponent } from './info-card/info-card.component';
+import { EcProjectComponent } from './ec-project/ec-project.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { InfoCardComponent } from './info-card/info-card.component';
     ClassProjectsComponent,
     InternshipsComponent,
     PersonalProjectsComponent,
-    InfoCardComponent
+    InfoCardComponent,
+    EcProjectComponent
   ],
   imports: [
     BrowserModule,
