@@ -4,6 +4,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +41,8 @@ import { HighlightsComponent } from './highlights/highlights.component';
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
