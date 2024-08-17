@@ -17,6 +17,7 @@ import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 import { InfoCardComponent } from './info-card/info-card.component';
 import { EcProjectComponent } from './ec-project/ec-project.component';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EcProjectComponent } from './ec-project/ec-project.component';
     InternshipsComponent,
     PersonalProjectsComponent,
     InfoCardComponent,
-    EcProjectComponent
+    EcProjectComponent,
+    HighlightsComponent
   ],
   imports: [
     BrowserModule,

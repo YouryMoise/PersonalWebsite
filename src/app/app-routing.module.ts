@@ -10,9 +10,10 @@ import { ClassProjectsComponent } from './class-projects/class-projects.componen
 import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 import { EcProjectComponent } from './ec-project/ec-project.component';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/extras', pathMatch: 'full' }, // Default route
+  { path: '', redirectTo: '/highlights', pathMatch: 'full' }, // Default route
   { path: 'home', component: HomeComponent},
   { path: 'sevt', component:SevtPageComponent },
   { path: 'wordSearch', component:WordSearchComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'internships', component: InternshipsComponent},
   { path: 'personal', component: PersonalProjectsComponent},
   { path: 'ec-project', component: EcProjectComponent},
+  { path: 'highlights', component: HighlightsComponent}
 
 ];
 

@@ -14,10 +14,21 @@
 <!-- style ="background:#95a5c9dc" -->
 </div>
 <div class="w-full flex light">
-  <p [ngStyle]="{'background': (currentTab == 0) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(0)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/extras">Extracurricular Projects</p>
-  <p [ngStyle]="{'background': (currentTab == 1) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(1)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/classProjects">Class Projects</p>
-  <p [ngStyle]="{'background': (currentTab == 2) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(2)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/internships">Internships</p>
-  <p [ngStyle]="{'background': (currentTab == 3) ? '#95a5c9dc' : '#adbbda89'}"  (click)="changeCurrentTab(3)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/personal">Personal Projects</p>
+  <p [style.background] = "(currentTab == 0) ? '#95a5c9dc' : '#adbbda89'" 
+     [style.font-weight] = "(currentTab == 0) ? 'bold' : 'normal'"
+     (click)="changeCurrentTab(0)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/highlights">Highlights</p>
+  <p [style.background] = "(currentTab == 1) ? '#95a5c9dc' : '#adbbda89'" 
+     [style.font-weight] = "(currentTab == 1) ? 'bold' : 'normal'"
+     (click)="changeCurrentTab(1)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/extras">Extracurricular Projects</p>
+  <p [style.background] = "(currentTab == 2) ? '#95a5c9dc' : '#adbbda89'" 
+     [style.font-weight] = "(currentTab == 2) ? 'bold' : 'normal'"
+     (click)="changeCurrentTab(2)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/classProjects">Class Projects</p>
+  <p [style.background] = "(currentTab == 3) ? '#95a5c9dc' : '#adbbda89'" 
+     [style.font-weight] = "(currentTab == 3) ? 'bold' : 'normal'"
+     (click)="changeCurrentTab(3)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/internships">Internships</p>
+  <p [style.background] = "(currentTab == 4) ? '#95a5c9dc' : '#adbbda89'" 
+     [style.font-weight] = "(currentTab == 4) ? 'bold' : 'normal'"
+     (click)="changeCurrentTab(4)" class = "w-1/4 subtoolbar text-center py-2 text-lg cursor-pointer font-medium" routerLink="/personal">Personal Projects</p>
 
 </div>
 
