@@ -19,6 +19,7 @@ import { PersonalProjectsComponent } from './personal-projects/personal-projects
 import { InfoCardComponent } from './info-card/info-card.component';
 import { EcProjectComponent } from './ec-project/ec-project.component';
 import { HighlightsComponent } from './highlights/highlights.component';
+import { NavItemComponent } from './nav-item/nav-item.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HighlightsComponent } from './highlights/highlights.component';
     PersonalProjectsComponent,
     InfoCardComponent,
     EcProjectComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    NavItemComponent
   ],
   imports: [
     BrowserModule,

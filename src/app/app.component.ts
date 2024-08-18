@@ -12,7 +12,11 @@ export class AppComponent {
   public onMobile:boolean = false;
   constructor(private router: Router,public breakpointObserver: BreakpointObserver) {}
 
+  tell(){
+    console.log(this.router.url)
+  }
   ngOnInit() {
+    console.log(this.router.url);
     this.breakpointObserver
       .observe(['(min-width: 800px)'])
       .subscribe((state: BreakpointState) => {
