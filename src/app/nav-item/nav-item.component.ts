@@ -13,7 +13,7 @@ export class NavItemComponent {
   @Input() url!:string;
   @Input() link!:string;
   @Input() onMobile:boolean = false;
-  ngOnInit(){
-    console.log("Hello"+this.router.url);
-  }
+  // ngOnInit(){
+  //   console.log("Hello"+this.router.url);
+  // }
 }
