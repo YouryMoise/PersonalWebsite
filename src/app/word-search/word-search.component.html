@@ -15,6 +15,44 @@
   </div>
 </div>  
 
+<app-info-card class="whitespace-pre-line" title="Initialization" imgLink="assets/WordSearchDiagram1.png" text="
+
+When initializing the puzzle, the flow follow these steps:
+The user submits an input string representing a puzzle
+Event listeners catch the input
+They pass it to a factory function that creates a new instance of the Grid class using the parser
+The Render Utility uses the Grid object's state to display the puzzle on the screen
+
+">
+
+</app-info-card>
+
+<app-info-card class="whitespace-pre-line" title="Solving" imgLink="assets/WordSearchDiagram2.png" text="
+
+To solve/unsolve one step or solve the whole puzzle:
+User sends the next, prev, or autofill signal
+Event listeners catch those signals and pass it to the Grid instance
+The Grid instance updates its state
+The Render Utility uses this state to change what is displayed
+
+">
+
+</app-info-card>
+
+<app-info-card class="whitespace-pre-line" title="Skills/Frameworks Used" imgLink="assets/Display.png" text="
+
+Test First Programming using Mocha unit test library
+Grammars and Parsing with ParserLib library
+Object-based approach with abstraction functions, representation invariants, and protection against representation exposure
+Node
+Factory design pattern
+
+">
+
+</app-info-card>
+
+
+
 <!-- Each box is a step (more or less)
     Writing the specs, abstraction function, RI, and SRE
         Got the spec, there are no AFs or SREs, minimal RI
@@ -29,7 +67,7 @@
     Future plans
 
 -->
-
+<!-- 
 <div class = "flex mx-20 mt-10 semidark rounded-lg">
   
     <mat-card class = "w-1/2">
@@ -37,7 +75,6 @@
       class=" dark h-full rounded-l-lg">
         <p class = "font-medium text-xl mb-2">Specifications</p>
       <img src="assets/Spec.png" class = "w-11/12 mx-auto" >
-        <!-- YOURY - need more pics for this, one spec isn't enough -->
 
 
       </mat-card-content>
@@ -61,10 +98,7 @@
     <mat-card-content style = "text-align:center;" 
     class=" dark h-full rounded-l-lg">
     <p class = "font-medium text-xl mb-2">Test Suite</p>
-    <!-- <div class="flex"> -->
     <img src="assets/TestPartition.png" class = "w-2/3 mx-auto" >
-    <!-- <img src="assets/TestCases.png" class = "w-1/2 mx-auto" > -->
-    <!-- </div> -->
 
 
     </mat-card-content>
@@ -87,10 +121,7 @@
         <mat-card-content style = "text-align:center;" 
         class=" dark h-full rounded-l-lg">
         <p class = "font-medium text-xl mb-2">Grammar and Parser</p>
-        <!-- <div class="flex"> -->
         <img src="assets/Grammar.png" class = "w-2/3 mx-auto" >
-        <!-- <img src="assets/TestCases.png" class = "w-1/2 mx-auto" > -->
-        <!-- </div> -->
     
     
         </mat-card-content>
@@ -113,10 +144,7 @@
         <mat-card-content style = "text-align:center;" 
         class=" dark h-full rounded-l-lg">
         <p class = "font-medium text-xl mb-2">Implementation</p>
-        <!-- <div class="flex"> -->
         <img src="assets/Implementation.png" class = "w-2/3 mx-auto" >
-        <!-- <img src="assets/TestCases.png" class = "w-1/2 mx-auto" > -->
-        <!-- </div> -->
     
     
         </mat-card-content>
@@ -137,10 +165,7 @@
         <mat-card-content style = "text-align:center;" 
         class=" dark h-full rounded-l-lg">
         <p class = "font-medium text-xl mb-2">Display and User Input</p>
-        <!-- <div class="flex"> -->
         <img src="assets/Display.png" class = "w-2/3 mx-auto" >
-        <!-- <img src="assets/TestCases.png" class = "w-1/2 mx-auto" > -->
-        <!-- </div> -->
     
     
         </mat-card-content>
@@ -154,7 +179,7 @@
     
     </p>
     </div>
-    </div>
+    </div> -->
 <!-- 
 <div class = "flex mx-20 mt-10 bg-green-300 rounded-lg">
 
