@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
+import { Card } from '../app.component';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-sevt-page',
@@ -7,7 +9,20 @@ import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/l
   styleUrls: ['./sevt-page.component.css']
 })
 export class SevtPageComponent {
-  constructor(public breakpointObserver:BreakpointObserver){}
+  cards:Card[] = []
+  relevantCards = [
+    "Battery Management System (BMS)",
+    "Cellboards",
+    "Motors",
+    "CAN Library Restructuring",
+    "Serial Drivers",
+    "Infotainment",
+  ]
+  constructor(public breakpointObserver:BreakpointObserver,
+    private appService:AppService
+  ){
+    this.appService.getCards(this.relevantCards).subscribe(cardList=>this.cards = cardList);
+  }
   onMobile:boolean = false;
   ngOnInit() {
     this.breakpointObserver

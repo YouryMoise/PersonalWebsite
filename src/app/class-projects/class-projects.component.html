@@ -22,7 +22,17 @@
 
 
 <div class = "pb-5">
-<app-info-card date="Fall 2023" class="whitespace-pre-line" title="Computation Structures - Operating System Design" imgLink="assets/OS.jpg" text = "Coded in C and Assembly to implement the following features of a small operating system:
+  <app-info-card *ngFor="let card of cards"
+[title] = "card.title"
+[imgLink] = "card.imgLink"
+[text] = "card.text"
+[route] = "card.route"
+[date] = "card.date"
+class = "whitespace-pre-line"
+>
+
+</app-info-card>
+<!-- <app-info-card date="Fall 2023" class="whitespace-pre-line" title="Computation Structures - Operating System Design" imgLink="assets/OS.jpg" text = "Coded in C and Assembly to implement the following features of a small operating system:
 Context switching between processes by accessing registers
 Switching between user and kernel mode
 Addressing exceptions using a trap handler
@@ -49,28 +59,11 @@ Encoding Culture was a class that focused on applying computer science principle
 </app-info-card>
 
 
-<!--and star battle -->
-
-
-<!-- Implement later -->
-<!-- <app-info-card title="Encoding Culture - AI Querying for Art Museums" imgLink="" text="">
-
-</app-info-card> -->
-
 <app-info-card date="Spring 2023" title="Fundamentals of Programming - LISP Intepreter" imgLink="assets/MoreCode.jpg" text="Used Python coding language to design interpeter for LISP. Implementing the interpreter involved object-oriented programming, splitting the program into several classes that we used to abstract away complicated details. We also designed a tokenizer, recursive descent parser, function frames, symbolic expression evaluation, branches such as if statements, and list processing using the car and cdr architecture.">
 
 </app-info-card>
 
-<!-- Us -->
 
-<!-- Understanding bit representation of variables in C
-Using GPIO pins to activate LEDs on a board
-Had 7 switches and one button
-You set those switches to represent some binary number, then pushed the button
-to send that to the controller
-Using those LEDs to display certain characters based on switches and button
-Getting those characters to move 
--->
 <app-info-card date="Fall 2022" title="Programming in C and Assembly - ASCII Lab" imgLink="assets/ScrollingText.mp4" text="
 For this project, we set up a circuit to connect a microcontroller to several switches, buttons, and
 an LED board. I programmed the microcontroller to read the inputs from the switches and buttons, where the positions of the switches corresponded to a binary number and the button indicated that we wanted to send that number to the controller. We then displayed the ascii character described by that number on the LED board.
@@ -88,9 +81,10 @@ to save the game's state and run the BFS algorithm in a limited amount of time.
 ">
 
 
-</app-info-card>
+</app-info-card> -->
 
-
+<!-- Star battle at some point
+ -->
 <!-- 
 
 Making a 2D implementation of Mines more stylistic and efficient

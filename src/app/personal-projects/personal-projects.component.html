@@ -1,12 +1,15 @@
 <div class = "pb-5">
-<app-info-card date="Summer 2024" title="Word Search Solver" imgLink="assets/SolvedWordSearch.png" text="Designed a web app, including an automated test suite, grammar, parser,
-and abstract data types to take word search puzzles from the user and solve 
-them graphically" route="/wordSearch">
+
+    <app-info-card *ngFor="let card of cards"
+[title] = "card.title"
+[imgLink] = "card.imgLink"
+[text] = "card.text"
+[route] = "card.route"
+[date] = "card.date"
+class = "whitespace-pre-line"
+>
 
 </app-info-card>
 
-<app-info-card date="Fall 2023" title="Tree Algorithm Visualizer" imgLink="assets/TreeTraversal.mp4" text="Used Python Tkinter package to design UI that recursively colors tree in in-order, pre-order, and post-order traversals">
-
-</app-info-card>   
 
 </div>
