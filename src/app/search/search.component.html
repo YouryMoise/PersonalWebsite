@@ -1,0 +1,17 @@
+<div class="flex justify-center">
+<input class="w-full mx-5 mt-2 border-solid" id = "SearchInput" (input)="updateSearch($event)">
+</div>
+
+<app-info-card *ngFor="let card of cards"
+[title] = "card.title"
+[imgLink] = "card.imgLink"
+[text] = "card.text"
+[route] = "card.route"
+[date] = "card.date"
+class = "whitespace-pre-line"
+
+>
+</app-info-card>
+
+
+

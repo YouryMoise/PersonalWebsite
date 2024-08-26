@@ -5,6 +5,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { InfoCardComponent } from './info-card/info-card.component';
 import { EcProjectComponent } from './ec-project/ec-project.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { NavItemComponent } from './nav-item/nav-item.component';
     InfoCardComponent,
     EcProjectComponent,
     HighlightsComponent,
-    NavItemComponent
+    NavItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { NavItemComponent } from './nav-item/nav-item.component';
     MatGridListModule,
     MatToolbarModule,
     MatTabsModule,
-    LayoutModule
+    LayoutModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
-
+import {
+  MAT_DIALOG_DATA,
+  MatDialog,
+  MatDialogModule,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogRef,
+  MatDialogTitle,
+} from '@angular/material/dialog';
+import { SearchComponent } from './search/search.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +22,7 @@ import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/l
 
 export class AppComponent {
   public onMobile:boolean = false;
+  public dialog = inject(MatDialog);
   constructor(private router: Router,public breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() {
@@ -23,6 +34,10 @@ export class AppComponent {
         } else {
           this.onMobile = true;
         }
+      });
+      const dialogRef = this.dialog.open(SearchComponent, {
+        height: '40vw',
+        width: '90vw',
       });
   }
 
@@ -42,6 +57,7 @@ export class Card{
     public text:string = "",
     public route:string = "",
     public date:string = "",
+    public tags:string[] = []
   ){
     
   }

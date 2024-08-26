@@ -13,7 +13,12 @@ export class AppService {
     `Co-leading the Electrical Engineering subteam of SEVT, a student-run group
 that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge`,
     "/sevt",
-    "Fall 2022 - Present"
+    "Fall 2022 - Present",
+    ["C", "C language", "C code", "C coding langauge", "C programming language","Motors", "Embedded systems", "Firmware", "Hardware", "High voltage",
+      "Embedded software", "Embedded firmware", "DSP","CAN",
+         "Digital Signal Processing", "UART", "Controller Area Network", "Telemetry",
+         "Wireless", "Infotainment", "Electrical", "IsoSPI", "SPI", "PyQT", "GPS","Python", "User Interface", "UI", "GitHub", "Git"
+     ]
   );
 
   ebayCard:Card = new Card(
@@ -21,7 +26,11 @@ that designs, builds, and races a solar-powered vehicle every 2 years at the Ame
     "assets/ebaySign.jpg",
     "Creating AI tool using LLMs to improve the experience of eBay's sellers",
     "",
-    "June 2024 - Present"
+    "June 2024 - Present",
+    ["Software", "Python", "Streamlit", "LLM", "Machine Learning",
+      "Documentation", "UI", "Unit Test", "Docker", "Kubernetes", "GitHub", "Git"
+
+    ]
   );
 
   wordSearchCard:Card = new Card(
@@ -31,7 +40,10 @@ that designs, builds, and races a solar-powered vehicle every 2 years at the Ame
     and abstract data types to take word search puzzles from the user and solve 
     them graphically`,
     "/wordSearch",
-    "Summer 2024"
+    "Summer 2024",
+    ["Software", "Typescript", "Web dev", "Web development", "Web design",
+      "Server", "Client", "Server-client", "GitHub", "Git"
+    ]
   );
 
   arcturusCard:Card = new Card(
@@ -39,7 +51,10 @@ that designs, builds, and races a solar-powered vehicle every 2 years at the Ame
     "assets/Buoys.png",
     "During Fall 2023, we needed image data to fine tune a machine learning model that our robot used to detect buoys. Due to limited resources, we could not get as many pictures as we needed, so I wrote a program that generated 3D buoy objects, placed them in an environment that resembled the ocean, and rotated them while taking hundreds of screenshots. This method generated over 1000 unique data points we could use to train our robot before getting access to real buoy data. ",
     "",
-    "Spring 2023 - Spring 2024"
+    "Spring 2023 - Spring 2024",
+    ["ROS", "Docker", "Python", "Fine tuning", "Machine Learning", "Computer vision",
+      "Robotics", "GitHub", "Git"
+    ]
 
   );
 
@@ -53,7 +68,11 @@ Addressing exceptions using a trap handler
 Conversions between virtual and physical memory
 Syscalls`,
     "",
-    "Fall 2023"
+    "Fall 2023",
+    ["C", "C language", "C code", "C coding langauge", "C programming language", "OS", "Operating System", "Assembly", "Virtual Memory", "Physical Memory",
+      "Context Switching", "Thread", "Threads", "Multithreading", "GitHub", "Git"
+
+    ]
   );
 
   procCard:Card = new Card(
@@ -65,7 +84,12 @@ Syscalls`,
     Data and instruction caches with stall behavior while accessing memory
     Bypassing across pipeline stages to prevent unnecessary stalling`,
     "",
-    "Fall 2023"
+    "Fall 2023",
+    ["C", "C language", "C code", "C coding langauge", "C programming language", "Virtual Memory", "Physical Memory", "Hardware Description Language",
+      "HDL", "Caching", "Cache", "Arithmetic Logic Unit", "ALU", "Boolean Algebra", "Hardware",
+      "Bypassing", "Stalling", "Processor", "CPU", "Central Processing Unit", "Branching", "GitHub", "Git"
+
+    ]
   );
 
   ecCard:Card = new Card(
@@ -73,7 +97,10 @@ Syscalls`,
     "assets/Paris.jpg",
     `Encoding Culture was a class that focused on applying computer science principles to humanistic research goals. We learned about text, audio, and image analysis, how physical media is digitally encoded, and several machine learning Python tools. For our final project, another student and I worked on an AI querying system for art museums that could recommend art pieces to users based on text descriptions.`,
     "/ec-project",
-    "Spring 2023"
+    "Spring 2023",
+    ["Machine Learning", "Computer Vision", "Roboflow", "K-means", "K means",
+      "Fine tuning", "Fine tune", "Python", "GitHub", "Git"
+    ]
   );
 
   lispCard:Card = new Card(
@@ -81,7 +108,10 @@ Syscalls`,
     "assets/MoreCode.jpg",
     "Used Python coding language to design interpeter for LISP. Implementing the interpreter involved object-oriented programming, splitting the program into several classes that we used to abstract away complicated details. We also designed a tokenizer, recursive descent parser, function frames, symbolic expression evaluation, branches such as if statements, and list processing using the car and cdr architecture.",
     "",
-    "Spring 2023"
+    "Spring 2023",
+    ["Python","Lisp","Interpreter", "Compiler", "Class", "Polymorphism", "Function frames", "Function frame", 
+      "Parser", "Recursive Descent Parser", "Tokenizer", "Symbolic Expression evaluation", "Car", "cdr", "GitHub", "Git"
+    ]
   );
 
   asciiCard:Card = new Card(
@@ -89,7 +119,10 @@ Syscalls`,
     "assets/ScrollingText.mp4",
     `For this project, we set up a circuit to connect a microcontroller to several switches, buttons, and an LED board. I programmed the microcontroller to read the inputs from the switches and buttons, where the positions of the switches corresponded to a binary number and the button indicated that we wanted to send that number to the controller. We then displayed the ascii character described by that number on the LED board. We also implemented code to make the text on the LED board scroll, as can be seen in the video.`,
     "",
-    "Fall 2022"
+    "Fall 2022",
+    [
+      "C", "C language", "C code", "C coding langauge", "C programming language", "Circuit", "Firmware", "GPIO", "Embedded Systems", "GitHub", "Git"
+    ]
   );
 
   snekCard:Card = new Card(
@@ -97,7 +130,10 @@ Syscalls`,
     "assets/Grid.jpg",
     `Snekoban was our version of a game where you play as a character that is trying to move boxes around a grid into certain positions. To make a solver, we represented each state as a node in a graph and used a breadth-first-search (BFS) to solve the game in the minimum number of moves. Our program had to be optimized to save the game's state and run the BFS algorithm in a limited amount of time.`,
 "",
-"Spring 2023"
+"Spring 2023",
+    [
+      "Python", "Breadth First Search", "BFS", "Classes", "Optimization", "Graphs", "GitHub", "Git"
+    ]
   );
 
   pgeCard:Card = new Card(
@@ -106,7 +142,8 @@ Syscalls`,
     `Developed an application with a partner in SQL and Angular to automate and streamline the employee onboarding process
 Designed unit tests in C# to validate backend code, ensuring functionality during launch of onboarding application`,
     "",
-    "June 2023 - August 2023"
+    "June 2023 - August 2023",
+    ["Angular", "Typescript", "SQL", "C#", "Web development", "Web design","GitHub", "Git"]
   );
 
   fulCard:Card = new Card(
@@ -115,7 +152,10 @@ Designed unit tests in C# to validate backend code, ensuring functionality durin
     `Automated online data collection and analysis of thousands of user statistics by developing and documenting Python scripts
 Empowered FUL to convey the success of their linear park to potential investors by generating data visualizations`,
     "",
-    "January 2023 - February 2023"
+    "January 2023 - February 2023",
+    [
+      "Python", "BeautifulSoup4", "Google API", "Openpyxl", "Excel", "Automation", "Mapping","GitHub", "Git"
+    ]
   );
 
   holoCard:Card = new Card(
@@ -124,15 +164,22 @@ Empowered FUL to convey the success of their linear park to potential investors 
     `Enhanced the launch of a new augmented reality speech-generating device by assembling market and consumer data
 Boosted awareness of the company by writing press releases and designing marketing sheets`,
 "",
-"January 2021 - August 2022"
+"January 2021 - August 2022",
+  [
+    "Marketing", "Excel", "Spreadsheets", "GitHub", "Git"
+  ]
   );
 
   treeCard:Card = new Card(
     "Tree Algorithm Visualizer",
     "assets/TreeTraversal.mp4",
-    "Used Python Tkinter package to design UI that recursively colors tree in in-order, pre-order, and post-order traversals",
+    "Used Python Tkinter package to design a UI that recursively colors tree in in-order, pre-order, and post-order traversals",
     "",
-    "Fall 2023"
+    "Fall 2023",
+    [
+      "Python", "Tkinter", "UI", "User Interface", "Recursion", "Tree", "Tree traversal", "Graphs",
+      "Algorithms", "GitHub", "Git"
+    ]
   );
 
   bmsCard:Card = new Card(
@@ -142,7 +189,11 @@ Boosted awareness of the company by writing press releases and designing marketi
   Monitoring the state of the car's electronics and controlling relays to supply power. It tracks the current being drawn by and supplied to the motors, solar panels, and charger. I validated its current measurements by comparing the output of our I2C library and the current we were drawing/delivering using a DC load. Having accurate current values allows us to emergency shut off the car in case currents get dangerously high.
   The headboard is also responsible for controlling the precharge and high power relays that connect to the motors, solar panels, and charger, which I also tested using its I/O pins and contactors.`,
   "",
-  ""
+  "",
+    ["C", "C language", "C code", "C coding langauge", "C programming language","Battery management system", "BMS", "Embedded systems", "Firmware", "Hardware", "High voltage",
+      "Relays", "Contactors", "Embedded software", "Embedded firmware", "IsoSPI", "DSP", "CAN",
+      "Digital Signal Processing", "UART", "Controller Area Network", "SPI","GitHub", "Git"
+    ]
   );
 
   cellCard:Card = new Card(
@@ -156,7 +207,11 @@ Boosted awareness of the company by writing press releases and designing marketi
   The headboard uses the values from the cellboards to emergency shut off the 
   car if our battery becomes dangerously hot or has too much/too little voltage.`,
   "",
-  ""
+  "",
+  ["C", "C language", "C code", "C coding langauge", "C programming language","Battery management system", "BMS", "Embedded systems", "Firmware", "Hardware", "High voltage",
+   "Embedded software", "Embedded firmware", "IsoSPI", "DSP","CAN",
+      "Digital Signal Processing", "UART", "Controller Area Network", "SPI","GitHub", "Git"
+  ]
   );
 
   motorCard:Card = new Card(
@@ -166,7 +221,11 @@ Boosted awareness of the company by writing press releases and designing marketi
   to operate with a Mitsuba D3 motor, wrote new controller code using
   CAN messages from one of our PCBs, and installed the motor controllers on the car. I also wrote code for receiving telemetry from the motors, which includes information about their velocities, temperatures, and error states.`,
   "",
-  ""
+  "",
+  ["C", "C language", "C code", "C coding langauge", "C programming language","Motors", "Embedded systems", "Firmware", "Hardware", "High voltage",
+    "Embedded software", "Embedded firmware", "DSP","CAN",
+       "Digital Signal Processing", "UART", "Controller Area Network","GitHub", "Git"
+   ]
   );
 
   canCard:Card = new Card(
@@ -174,15 +233,23 @@ Boosted awareness of the company by writing press releases and designing marketi
     "assets/DirectCANSetup.jpg",
     `Our current car has several pieces of hardware that were not included on the previous car, including an extra motor, a charger, and new MPPTs, all of which required adding new messages to our CAN library. This brought the total to 20 messages the dashboard needed to read, but our microcontroller can only tranceive 15. To get around this, we rerouted the CAN, sending messages to other boards and merging them before sending them to the dashboard, which allowed us to have complete telemetry regarding every system on the car.`,
 "",
-""
+"",
+["C", "C language", "C code", "C coding langauge", "C programming language","Embedded systems", "Firmware", "Hardware",
+  "Embedded software", "Embedded firmware", "DSP","CAN",
+     "Digital Signal Processing", "UART", "Controller Area Network", "Drivers","GitHub", "Git"
+ ]
   )
 
   serialCard:Card = new Card(
-    "Serial Drivers",
+    "UART Drivers",
     "assets/SerialSetup.jpg",
-    `Our serial drivers were originally set up to send and receive one character at a time. I rewrote the logic involving the tx and rx buffers, as well as the vector interrupts, to allows our boards to send and receive several characters at once while staying synchronized with each other. Doing so made debugging our code with the serial monitor much easier. We used this extensively while manufacturing our boards and during the race to debug unexpected issues.`,
+    `Our UART drivers were originally set up to send and receive one character at a time. I rewrote the logic involving the tx and rx buffers, as well as the vector interrupts, to allows our boards to send and receive several characters at once while staying synchronized with each other. Doing so made debugging our code with the serial monitor much easier. We used this extensively while manufacturing our boards and during the race to debug unexpected issues.`,
 "",
-""
+"",
+["C", "C language", "C code", "C coding langauge", "C programming language","Embedded systems", "Firmware", "Hardware",
+  "Embedded software", "Embedded firmware", "DSP",
+     "Digital Signal Processing", "UART", "Controller Area Network", "Drivers","GitHub", "Git"
+ ]
   )
 
   infotainmentCard:Card = new Card(
@@ -190,7 +257,9 @@ Boosted awareness of the company by writing press releases and designing marketi
     "assets/Infotainment.jpg",
     `I helped implement a few features for the frontend of our infotainment system, adding features for user interaction, fixing bugs that would cause the main program to crash, and allowing the system to save its state to allow users to save their preferences for the UI.`,
 "",
-""
+"",
+    ["Python", "User Interface", "UI", "PyQT","GitHub", "Git"]
+
   );
 
   initCard:Card = new Card(
@@ -272,7 +341,7 @@ Factory design pattern`,
     this.solvingCard, this.skillsCard, this.featureCard, this.optimalCard, this.recognitionCard,
     this.yoloCard
   ]
-  getCards(titles:string[]){
+  getCards(titles:string[]):BehaviorSubject<Card[]>{
     let relevantCards:Card[] = []
     let numCards:number = this.cards.length;
     let counter:number = 0;
@@ -288,6 +357,31 @@ Factory design pattern`,
     }
     return new BehaviorSubject(relevantCards)
   } 
+
+  searchCards(phrase:string):BehaviorSubject<Card[]>{
+    let relevantCards:Card[] = []
+    // let numCards:number = this.cards.length;
+    // let counter:number = 0;
+    // outer while loop is to make sure order is preserved
+    // better ways to do this though
+    // while (counter < numCards){
+        for(let card of this.cards){
+          if (card.text.toLowerCase().includes(phrase.toLowerCase())){
+            relevantCards.push(card)
+            continue;
+          }
+          for (let tag of card.tags){
+            if (tag.toLowerCase().includes(phrase) || phrase.toLowerCase().includes(tag)){
+              relevantCards.push(card)
+              continue;
+            }
+          }
+        }
+      // counter++;
+    // }
+    return new BehaviorSubject(relevantCards)
+
+  }
 
 
   constructor() { }
