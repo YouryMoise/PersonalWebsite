@@ -24,7 +24,13 @@ export class AppComponent {
   public onMobile:boolean = false;
   public dialog = inject(MatDialog);
   constructor(private router: Router,public breakpointObserver: BreakpointObserver) {}
-
+  openDialog(){
+  const dialogRef = this.dialog.open(SearchComponent, {
+        height: '40vw',
+        width: '90vw',
+        
+      });
+  }
   ngOnInit() {
     this.breakpointObserver
       .observe(['(min-width: 800px)'])
@@ -35,10 +41,7 @@ export class AppComponent {
           this.onMobile = true;
         }
       });
-      const dialogRef = this.dialog.open(SearchComponent, {
-        height: '40vw',
-        width: '90vw',
-      });
+      
   }
 
 

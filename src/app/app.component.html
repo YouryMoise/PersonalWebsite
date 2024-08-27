@@ -1,16 +1,25 @@
 
 <div class="flex h-1/5" id="toolbar">
   <!-- <div> -->
-  <div class="my-auto w-1/2 "
+  <div class="my-auto w-1/2  flex justify-center"
   [class] = "(onMobile) ? 'ml-30' : 'ml-60'"
   >
+
       <h1 class = "text-center lighttext h-full">Hi! I'm Youry Moise</h1>
+  <mat-icon 
+  style = "color:white  " (click)="openDialog()"
+  class="ml-20 mt-2 cursor-pointer  " aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+
 
 </div>
 
 <div class="bg-green-200">
   <img src="assets/ProfilePic.jpg" class="h-full">
 </div>
+
+<!-- <div class = "w-1/4 flex justify-end"> -->
+  <!-- <p class="pr-5 pt-5">Search</p> -->
+<!-- </div> -->
 <!-- </div> -->
 <!-- [ngStyle]="{'background': (currentTab == 0) ? '#95a5c9dc' : '#adbbda89'}" -->
 <!-- style ="background:#95a5c9dc" -->

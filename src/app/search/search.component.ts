@@ -9,6 +9,7 @@ import { AppService } from '../app.service';
 })
 export class SearchComponent {
   cards:Card[] = []
+  isFirstFocus: boolean = true;
   phrases:string[] = [
     "headboard"
   ]
@@ -22,6 +23,19 @@ export class SearchComponent {
   updateSearch(event:any):void{
     this.phrase = this.inputBox.value;
     this.appService.searchCards(this.phrase).subscribe(cardList=>this.cards = cardList);
+  }
+
+  clearInput(event:any):void{
+    if(this.isFirstFocus){
+      this.inputBox.blur()
+      this.isFirstFocus = false;
+    }
+    else{
+      this.inputBox.value = "";
+
+    }
+
+
   }
 
   ngOnInit():void{

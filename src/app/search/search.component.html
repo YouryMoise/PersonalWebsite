@@ -1,5 +1,7 @@
+<div class="light h-full">
 <div class="flex justify-center">
-<input class="w-full mx-5 mt-2 border-solid" id = "SearchInput" (input)="updateSearch($event)">
+<input value = "Search for skills or projects" class="w-full mx-5 mt-2 border-solid" 
+id = "SearchInput" (input)="updateSearch($event)" (focus)="clearInput($event)">
 </div>
 
 <app-info-card *ngFor="let card of cards"
@@ -15,3 +17,4 @@ class = "whitespace-pre-line"
 
 
 
+</div>

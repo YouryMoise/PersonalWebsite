@@ -10,8 +10,7 @@ export class AppService {
   sevtCard:Card = new Card(
     "Solar Electric Vehicle Team (SEVT)",
     "assets/Gemini.JPG",
-    `Co-leading the Electrical Engineering subteam of SEVT, a student-run group
-that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge`,
+    `Co-leading the Electrical Engineering subteam of SEVT, a student-run group that designs, builds, and races a solar-powered vehicle every 2 years at the American Solar Challenge`,
     "/sevt",
     "Fall 2022 - Present",
     ["C", "C language", "C code", "C coding langauge", "C programming language","Motors", "Embedded systems", "Firmware", "Hardware", "High voltage",
