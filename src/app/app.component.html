@@ -6,14 +6,11 @@
   >
 
       <h1 class = "text-center lighttext h-full">Hi! I'm Youry Moise</h1>
-  <mat-icon 
-  style = "color:white  " (click)="openDialog()"
-  class="ml-20 mt-2 cursor-pointer  " aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
-
 
 </div>
 
-<div class="bg-green-200">
+<div class="flex w-1/2"
+[class]="onMobile ? 'justify-end' : ''">
   <img src="assets/ProfilePic.jpg" class="h-full">
 </div>
 
@@ -24,7 +21,7 @@
 <!-- [ngStyle]="{'background': (currentTab == 0) ? '#95a5c9dc' : '#adbbda89'}" -->
 <!-- style ="background:#95a5c9dc" -->
 </div>
-<div class="w-full flex light">
+<div class="w-full flex" style="background:#adbbda89">
 
      <app-nav-item
      class = "w-1/5"
@@ -75,6 +72,12 @@
      >
 
      </app-nav-item>
+     <div class='flex justify-center ml-5'>
+     <mat-icon 
+  style = "color:white" (click)="openDialog()"
+  class="cursor-pointer m-auto mr-5 " aria-hidden="false" fontIcon="search"
+  ></mat-icon>
+</div>
 
  
 </div>
