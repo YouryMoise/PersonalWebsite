@@ -10,12 +10,22 @@ import { AppService } from '../app.service';
 })
 export class SevtPageComponent {
   cards:Card[] = []
+  
+
+  getCard(index:number):Card {
+    if (this.cards[index]){
+      return this.cards[index];
+    }
+    return new Card()
+  }
+
+  str:string = "hi";
   relevantCards = [
     "Battery Management System (BMS)",
     "Cellboards",
     "Motors",
     "CAN Library Restructuring",
-    "Serial Drivers",
+    "UART Drivers",
     "Infotainment",
   ]
   constructor(public breakpointObserver:BreakpointObserver,
@@ -34,5 +44,6 @@ export class SevtPageComponent {
           this.onMobile = true;
         }
       });
+    console.log(this.cards)
   }
 }
