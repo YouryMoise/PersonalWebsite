@@ -83,22 +83,22 @@
   </app-info-card>
     
   <!-- dashboard no breakpoints -->
-<div class = "flex mx-20 mt-10 semidark rounded-lg" *ngIf="!onMobile">
+<div class = "flex mx-20 mt-10 semidark rounded-2xl" *ngIf="!onMobile">
   
-  <mat-card class = "w-1/2 bg-blue-300 ">
-    <mat-card-content style = "text-align:center;" 
-    class=" dark h-full rounded-l-lg">
-    <p class = "font-medium text-xl mb-2 lighttext">Dashboard and Telemetry</p>
+  <mat-card class = "w-1/2" style = "border-radius: 16px; ">
+    <mat-card-content style = "text-align:center;background:#3d52a0c8" 
+      class= "h-full rounded-2xl" >
+      <h1 class = "lighttext">Dashboard and Telemetry</h1>
       <div>
-          <img src="assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto" >
-          <img src="assets/JustXbee.jpg" class="w-11/12 mt-5 mx-auto">
+          <img src="assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto rounded-lg" >
+          <img src="assets/JustXbee.jpg" class="w-11/12 mt-5 mx-auto rounded-lg">
   </div>
 
 
     </mat-card-content>
   </mat-card>
   <div class = "w-1/2 m-auto">
-  <p class="px-10 text-2xl h-full">
+  <p class="px-5 text-2xl h-full py-5 opacity-75">
       
       On the right side of the dashboard, there is a blue module labeled "Xbee", which I helped configure and test.
       This is the device we use to

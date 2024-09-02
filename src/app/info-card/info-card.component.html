@@ -5,7 +5,7 @@
       <mat-card-content style = "text-align:center;background:#3d52a0c8" 
       class= "h-full rounded-2xl" >
         <h1 class = "lighttext">{{title}}</h1>
-      <img [src]="imgLink" class = "w-11/12 mx-auto" *ngIf="imgLink.includes('.jpg') || imgLink.includes('.png') || imgLink.includes('.JPG')" >
+      <img [src]="imgLink" class = "w-11/12 mx-auto rounded-lg" *ngIf="imgLink.includes('.jpg') || imgLink.includes('.png') || imgLink.includes('.JPG')" >
       <video controls class = "w-11/12 mx-auto px-5" [src] = "imgLink" *ngIf="imgLink.includes('.mp4')"></video>
 
 

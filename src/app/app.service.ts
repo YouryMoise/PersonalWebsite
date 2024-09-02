@@ -35,9 +35,7 @@ export class AppService {
   wordSearchCard:Card = new Card(
     "Word Search Solver",
     "assets/SolvedWordSearch.png",
-    `Designed a web app, including an automated test suite, grammar, parser,
-    and abstract data types to take word search puzzles from the user and solve 
-    them graphically`,
+    `Designed a web app, including an automated test suite, grammar, parser, and abstract data types to take word search puzzles from the user and solve them graphically`,
     "/wordSearch",
     "Summer 2024",
     ["Software", "Typescript", "Web dev", "Web development", "Web design",
@@ -184,8 +182,7 @@ Boosted awareness of the company by writing press releases and designing marketi
   bmsCard:Card = new Card(
     "Battery Management System (BMS)",
     "assets/Headboard.jpg",
-    `Our headboard, the green PCB, serves as our BMS and has two main roles:
-  Monitoring the state of the car's electronics and controlling relays to supply power. It tracks the current being drawn by and supplied to the motors, solar panels, and charger. I validated its current measurements by comparing the output of our I2C library and the current we were drawing/delivering using a DC load. Having accurate current values allows us to emergency shut off the car in case currents get dangerously high.
+    `Our headboard, the green PCB, serves as our BMS and has two main roles: Monitoring the state of the car's electronics and controlling relays to supply power. It tracks the current being drawn by and supplied to the motors, solar panels, and charger. I validated its current measurements by comparing the output of our I2C library and the current we were drawing/delivering using a DC load. Having accurate current values allows us to emergency shut off the car in case currents get dangerously high.
   The headboard is also responsible for controlling the precharge and high power relays that connect to the motors, solar panels, and charger, which I also tested using its I/O pins and contactors.`,
   "",
   "",
@@ -198,13 +195,8 @@ Boosted awareness of the company by writing press releases and designing marketi
   cellCard:Card = new Card(
     "Cellboards",
     "assets/SingleCellboardOnBattery.jpg",
-    `We have 8 cellboards on our battery, each of which is responsible for 
-  measuring the voltage and temperature of a sector of the battery. They also
-  balance our battery so all the cells are at roughly equal voltages.
-  I set up and debugged the IsoSpi connection between the headboard and 
-  the cellboards, allowing them to communicate while the car was operational.
-  The headboard uses the values from the cellboards to emergency shut off the 
-  car if our battery becomes dangerously hot or has too much/too little voltage.`,
+    `We have 8 cellboards on our battery, each of which is responsible for measuring the voltage and temperature of a sector of the battery. They also balance our battery so all the cells are at roughly equal voltages.
+  I set up and debugged the IsoSpi connection between the headboard and the cellboards, allowing them to communicate while the car was operational. The headboard uses the values from the cellboards to emergency shut off the car if our battery becomes dangerously hot or has too much/too little voltage.`,
   "",
   "",
   ["C", "C language", "C code", "C coding langauge", "C programming language","Battery management system", "BMS", "Embedded systems", "Firmware", "Hardware", "High voltage",
@@ -217,8 +209,7 @@ Boosted awareness of the company by writing press releases and designing marketi
     "Motors",
     "assets/DualMotorSetup.jpg",
     `I configured a wavesculptor motor controller
-  to operate with a Mitsuba D3 motor, wrote new controller code using
-  CAN messages from one of our PCBs, and installed the motor controllers on the car. I also wrote code for receiving telemetry from the motors, which includes information about their velocities, temperatures, and error states.`,
+  to operate with a Mitsuba D3 motor, wrote new controller code using CAN messages from one of our PCBs, and installed the motor controllers on the car. I also wrote code for receiving telemetry from the motors, which includes information about their velocities, temperatures, and error states.`,
   "",
   "",
   ["C", "C language", "C code", "C coding langauge", "C programming language","Motors", "Embedded systems", "Firmware", "Hardware", "High voltage",
@@ -339,8 +330,8 @@ Factory design pattern`,
 
   chatbotCard:Card = new Card(
     "AI Chatbot",
-    "assets/",
-    "For my project, I leveraged Langchain and Python machine learning libraries to create a chatbot powered by large language models that automated a manual process done by the company's Monetization team, speeding up the process of respond to fee tickets by 30%. Skills and frameworks involved include Docker, RESTFul API calls, Prompt Engineering, UI Design, SQL, and GitHub",
+    "assets/ebaySign.jpg",
+    "For my project, I leveraged Langchain and Python machine learning libraries to create a chatbot powered by large language models that automated a manual process done by the company's Monetization team, speeding up the process of responding to fee tickets by 30%. Skills and frameworks involved include Docker, RESTFul API calls, Prompt Engineering, UI Design, SQL, and GitHub",
     "",
     ""
   )
