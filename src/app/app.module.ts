@@ -23,6 +23,7 @@ import { HighlightsComponent } from './highlights/highlights.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { SearchComponent } from './search/search.component';
 import {MatIconModule} from '@angular/material/icon';
+import { EbayComponent } from './ebay/ebay.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {MatIconModule} from '@angular/material/icon';
     EcProjectComponent,
     HighlightsComponent,
     NavItemComponent,
-    SearchComponent
+    SearchComponent,
+    EbayComponent
   ],
   imports: [
     BrowserModule,

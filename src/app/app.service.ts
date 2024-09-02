@@ -24,7 +24,7 @@ export class AppService {
     "eBay Software Engineering Intern",
     "assets/ebaySign.jpg",
     "Creating AI tool using LLMs to improve the experience of eBay's sellers",
-    "",
+    "/ebay",
     "June 2024 - Present",
     ["Software", "Python", "Streamlit", "LLM", "Machine Learning",
       "Documentation", "UI", "Unit Test", "Docker", "Kubernetes", "GitHub", "Git"
@@ -329,6 +329,22 @@ Factory design pattern`,
     ""
   );
 
+  eltPresentationCard:Card = new Card(
+    "C-Suite Presentation",
+    "assets/ELTPresentation.png",
+    "At the end of the summer, I was one of four interns chosen to present our projects to the CEO, CFO, and Chief Product Officer. This was an incredible opportunity to share my progress with eBay's Executive Leadership Team and contribute ideas for next year's internship program",
+    "",
+    ""
+  )
+
+  chatbotCard:Card = new Card(
+    "AI Chatbot",
+    "assets/",
+    "For my project, I leveraged Langchain and Python machine learning libraries to create a chatbot powered by large language models that automated a manual process done by the company's Monetization team, speeding up the process of respond to fee tickets by 30%. Skills and frameworks involved include Docker, RESTFul API calls, Prompt Engineering, UI Design, SQL, and GitHub",
+    "",
+    ""
+  )
+
 
 
 
@@ -338,7 +354,7 @@ Factory design pattern`,
     this.pgeCard, this.fulCard, this.holoCard, this.treeCard, this.bmsCard, this.cellCard,
     this.motorCard, this.canCard, this.serialCard, this.infotainmentCard, this.initCard,
     this.solvingCard, this.skillsCard, this.featureCard, this.optimalCard, this.recognitionCard,
-    this.yoloCard
+    this.yoloCard, this.eltPresentationCard, this.chatbotCard
   ]
   getCards(titles:string[]):BehaviorSubject<Card[]>{
     let relevantCards:Card[] = []

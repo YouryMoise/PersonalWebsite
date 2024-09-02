@@ -1,9 +1,9 @@
 
-<div class = "flex mx-20 my-5 semidark" *ngIf="onMobile == false">
+<div class = "flex mx-20 my-5 semidark rounded-2xl" *ngIf="onMobile == false">
 
-    <mat-card class = "w-1/2 rounded-2xl">
-      <mat-card-content style = "text-align:center" 
-      class= "h-full dark">
+    <mat-card class = "w-1/2" style = "border-radius: 16px; ">
+      <mat-card-content style = "text-align:center;background:#3d52a0c8" 
+      class= "h-full rounded-2xl" >
         <h1 class = "lighttext">{{title}}</h1>
       <img [src]="imgLink" class = "w-11/12 mx-auto" *ngIf="imgLink.includes('.jpg') || imgLink.includes('.png') || imgLink.includes('.JPG')" >
       <video controls class = "w-11/12 mx-auto px-5" [src] = "imgLink" *ngIf="imgLink.includes('.mp4')"></video>

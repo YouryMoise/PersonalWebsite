@@ -11,6 +11,7 @@ import { InternshipsComponent } from './internships/internships.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
 import { EcProjectComponent } from './ec-project/ec-project.component';
 import { HighlightsComponent } from './highlights/highlights.component';
+import { EbayComponent } from './ebay/ebay.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/highlights', pathMatch: 'full' }, // Default route
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'internships', component: InternshipsComponent},
   { path: 'personal', component: PersonalProjectsComponent},
   { path: 'ec-project', component: EcProjectComponent},
-  { path: 'highlights', component: HighlightsComponent}
+  { path: 'highlights', component: HighlightsComponent},
+  { path: 'ebay', component:EbayComponent}
 
 ];
 

@@ -1,0 +1,16 @@
+<div class="light pb-5">
+
+    
+    <app-info-card *ngFor="let card of cards"
+    [title] = "card.title"
+    [imgLink] = "card.imgLink"
+    [text] = "card.text"
+    [route] = "card.route"
+    [date] = "card.date"
+    class = "whitespace-pre-line"
+    
+    >
+    
+    </app-info-card>
+    
+    </div>

@@ -12,3 +12,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
 .learn {background:#7091e6e2;}
 .subtoolbar {background:#adbbda89; color:#00000071;}
 ::ng-deep .mat-tab-label {background:red;color: #3498db;}
+mat-card {
+    border-radius: 40px; /* Adjust the value as needed */
+    background: red;
+  }
+  ::ng-deep .bg-red-200 {
+    background-color: #fecaca; /* Tailwind's bg-red-200 color */
+  }

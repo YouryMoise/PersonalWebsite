@@ -22,7 +22,8 @@ export class SearchComponent {
   }
   updateSearch(event:any):void{
     this.phrase = this.inputBox.value;
-    this.appService.searchCards(this.phrase).subscribe(cardList=>this.cards = cardList);
+    if (this.phrase) this.appService.searchCards(this.phrase).subscribe(cardList=>this.cards = cardList);
+    else this.cards = []
   }
 
   clearInput(event:any):void{
