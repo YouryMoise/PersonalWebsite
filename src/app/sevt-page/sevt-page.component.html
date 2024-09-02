@@ -18,18 +18,17 @@
 
   </app-info-card>
   
-    <div class = "text-center mt-1 semidark pt-2 pb-5 px-5 rounded-lg"
+    <!-- <div class = "text-center mt-1 semidark pt-2 pb-5 px-5 rounded-lg"
     [class]="onMobile ? 'mx-2' : 'mx-20'">
       <p 
       [class]="onMobile ? 'text-lg' : 'text-xl '"
       class = " mb-2 lighttext">Cellboards on Battery</p>
       <div class = "w-10/12 m-auto">
-      <!-- <h1 class = "w-full">Hello</h1> -->
     
       <img src="assets/FourCellboardsOnBattery.jpg" class = "w-full mx-auto h-80" >
       
     </div>
-  </div>  
+  </div>   -->
 
 
   
@@ -120,9 +119,9 @@
     <mat-card-content style = "text-align:center" 
     class= "h-full dark">
       <p class = "lighttext text-lg">Dashboard and Telemetry</p>
-      <img src="assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto" >
+      <img src="assets/DashboardFullySoldered.png" class = "w-11/12 mx-auto rounded-lg" >
       <br>
-      <img src="assets/JustXbee.jpg" class = "w-11/12 mx-auto" >
+      <img src="assets/JustXbee.jpg" class = "w-11/12 mx-auto rounded-lg" >
 
 
     </mat-card-content>
@@ -152,7 +151,7 @@
 
 
 
-<div class = "text-center mt-1 semidark pt-2 pb-5 px-5 rounded-lg"
+<div class = "text-center mt-1 semidark pt-2 pb-5 px-5 rounded-2xl"
   [class]="onMobile ? 'mx-2' : 'mx-20'">
     <p class = "text-xl mb-2 lighttext">More Telemetry</p>
   <div class = " m-auto"
@@ -163,7 +162,7 @@
     [class]="onMobile ? 'w-full' : 'w-1/2'" >
 <br *ngIf="onMobile">
 
-    <video controls height = "300" class = "mx-auto px-5" src = "assets/MotorAndTelemetryShort.mp4"
+    <video controls height = "300" class = "mx-auto px-5 rounded-lg" src = "assets/MotorAndTelemetryShort.mp4"
     [class]="onMobile ? 'w-full' : 'w-1/2'"
     >
 
