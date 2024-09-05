@@ -323,7 +323,7 @@ Factory design pattern`,
   eltPresentationCard:Card = new Card(
     "C-Suite Presentation",
     "assets/ELTPresentation.png",
-    "At the end of the summer, I was one of four interns chosen to present our projects to the CEO, CFO, and Chief Product Officer. This was an incredible opportunity to share my progress with eBay's Executive Leadership Team and contribute ideas for next year's internship program",
+    "At the end of the summer, I was one of four interns chosen to present our projects to the CEO, CFO, and Chief People Officer. This was an incredible opportunity to share my progress with eBay's Executive Leadership Team and contribute ideas for next year's internship program",
     "",
     ""
   )
